@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ruslan Mangushev](https://up.htmlacademy.ru/adaptive/22/user/939329).
-* Наставник: `Неизвестно`.
+* Наставник: [Anastasiya Korbut](https://htmlacademy.ru/profile/kotovyy) .
 
 ---
 
