@@ -1,0 +1,29 @@
+.button {
+  margin: 27px 20px 49px 20px;
+  width: 280px;
+  height: 58px;
+  background-color: @lightblue;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @white;
+  border: none;
+
+  &:hover {
+    background-color: @blue;
+    outline-color: @blue;
+  }
+
+  &:active {
+    background-color: @darkblue;
+    outline-color: @darkblue;
+    color: @opacitywhite;
+  }
+
+  &:disabled {
+    background-color: @ultralightbeige;
+  }
+}
