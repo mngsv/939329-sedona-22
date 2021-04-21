@@ -62,89 +62,89 @@
 
 <!--            Блок с ФИО клиента              -->
 
-            <fieldset class="feedback-person">
-              <legend class="feedback-person__title">Представьтесь</legend>
-              <ul class="feedback-person__list">
-                <li class="feedback-person__item">
-                  <label class="feedback-person__label" for="name-field">Имя<sup>*</sup>:</label>
-                  <input class="feedback-person__input--name" id="name-field" type="text" name="first-name" value="Петр">
+            <fieldset class="feedback__block">
+              <legend class="feedback__title">Представьтесь</legend>
+              <ul class="feedback__list">
+                <li class="feedback__item">
+                  <label class="feedback__label" for="name-field">Имя<sup>*</sup>:</label>
+                  <input class="feedback__input--name" id="name-field" type="text" name="first-name" value="Петр">
                 </li>
-                <li class="feedback-person__item">
-                  <label class="feedback-person__label" for="last-name-field">Фамилия<sup>*</sup>:</label>
-                  <input class="feedback-person__input" id="last-name-field" type="text" name="last-name" value="Иванов">
+                <li class="feedback__item">
+                  <label class="feedback__label" for="last-name-field">Фамилия<sup>*</sup>:</label>
+                  <input class="feedback__input" id="last-name-field" type="text" name="last-name" value="Иванов">
                 </li>
-                <li class="feedback-person__item">
-                  <label class="feedback-peron__label" for="patronymic">Отчество:</label>
-                  <input class="feedback-person__input" id="patronymic" type="text" name="patronymic" value="Александрович">
+                <li class="feedback__item">
+                  <label class="feedback__label" for="patronymic">Отчество:</label>
+                  <input class="feedback__input" id="patronymic" type="text" name="patronymic" value="Александрович">
                 </li>
               </ul>
             </fieldset>
 
 <!--          Блок с контактной информацией           -->
 
-            <fieldset class="feedback-contacts">
-              <legend class="feedback-contacts__title">Контактная информация:</legend>
-              <ul class="feedback-contacts__list">
-                <li class="feedback-contacts__item">
-                  <label class="feedback-contacts__label" for="phone-contact">Контактный телефон<sup>*</sup>:</label>
-                  <input class="feedback-contacts__input" id="phone-contact" type="tel" value="Введите телефон">
+            <fieldset class="feedback__block feedback__block--column">
+              <legend class="feedback__title">Контактная информация:</legend>
+              <ul class="feedback__list--contacts">
+                <li class="feedback__item feedback__item--contacts">
+                  <label class="feedback__label feedback__label--contacts" for="phone-contact">Контактный телефон<sup>*</sup>:</label>
+                  <input class="feedback__input feedback__input--contacts" id="phone-contact" type="tel" value="Введите телефон">
                 </li>
-                <li class="feedback-contacts__item">
-                  <label class="feedback-contacts__label" for="email-contact">Электронная почта:<sup>*</sup></label>
-                  <input class="feedback-contacts__input" id="email-contact" type="email" name="email" value="Введите e-mail">
+                <li class="feedback__item feedback__item--contacts">
+                  <label class="feedback__label feedback__label--contacts" for="email-contact">Электронная почта:<sup>*</sup></label>
+                  <input class="feedback__input feedback__input--contacts" id="email-contact" type="email" name="email" value="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
 
 <!--            Блок с оценкой            -->
 
-            <fieldset class="feedback-rating">
-              <legend class="feedback-rating__title">Ваше общее впечатление:</legend>
-              <ul class="feedback-rating__list">
-                <li class="feedback-rating__item">
-                  <input class="feedback-rating__input" id="pos-feedback" type="radio" name="positive-feedback">
-                  <label class="feedback-rating__label" for="pos-feedback">Cкорее положительное</label>
+            <fieldset class="feedback__block feedback__block--column">
+              <legend class="feedback__title">Ваше общее впечатление:</legend>
+              <ul class="feedback__list">
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--radio" id="pos-feedback" type="radio" name="positive-feedback">
+                  <label class="feedback__label" for="pos-feedback">Cкорее положительное</label>
                 </li>
-                <li class="feedback-rating__item">
-                  <input class="feedback-rating__input" id="neg-feedback" type="radio" name="negative-feedback">
-                  <label class="feedback-rating__label" for="neg-feedback">Скорее отрицательное</label>
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--radio" id="neg-feedback" type="radio" name="negative-feedback">
+                  <label class="feedback__label" for="neg-feedback">Скорее отрицательное</label>
                 </li>
-                <li class="feedback-rating__item">
-                  <input class="feedback-rating__input" id="neutral-feedback" type="radio" name="neutral-feedback">
-                  <label class="feedback-rating__label" for="neutral-feedback">Затрудняюсь ответить</label>
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--radio" id="neutral-feedback" type="radio" name="neutral-feedback">
+                  <label class="feedback__label" for="neutral-feedback">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
 
 <!--          Блок с посещёнными достопримечательностями          -->
 
-            <fieldset class="feedback-places">
-              <legend class="feedback-places__title">Посещенные достопримечательности:</legend>
-              <ul class="feedback-places__list">
-                <li class="feedback-places__item">
-                  <input class="feedback-places__input feedback__input--checkbox" id="bridge" type="checkbox" name="bridge-place" checked>
-                  <label class="feedback-places__label" for="bridge">Мост Дьявола</label>
+            <fieldset class="feedback__block">
+              <legend class="feedback__title">Посещенные достопримечательности:</legend>
+              <ul class="feedback__list">
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--checkbox" id="bridge" type="checkbox" name="bridge-place" checked>
+                  <label class="feedback__label" for="bridge">Мост Дьявола</label>
                 </li>
-                <li class="visitors-places__item">
-                  <input class="feedback-places__input feedback__input--checkbox" id="rock" type="checkbox" name="rock-place" checked>
-                  <label class="feedback-places__label" for="rock">Гора-Колокол</label>
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--checkbox" id="rock" type="checkbox" name="rock-place" checked>
+                  <label class="feedback__label" for="rock">Гора-Колокол</label>
                 </li>
-                <li class="visitors-places__item">
-                  <input class="feedback-places__input feedback__input--checkbox" id="park" type="checkbox" name="slide-park-place" checked>
-                  <label class="feedback-places__label" for="park">Слайд-парк</label>
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--checkbox" id="park" type="checkbox" name="slide-park-place" checked>
+                  <label class="feedback__label" for="park">Слайд-парк</label>
                 </li>
-                <li class="visitors-places__item">
-                  <input class="feedback-places__input feedback__input--checkbox" id="red-rock" type="checkbox" name="red-rock-place">
-                  <label class="feedback-places__label" for="red-rock">Красные скалы</label>
+                <li class="feedback__item--rating">
+                  <input class="feedback__input feedback__input--checkbox" id="red-rock" type="checkbox" name="red-rock-place">
+                  <label class="feedback__label" for="red-rock">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
 
 <!--         Поле с общим отзывом         -->
 
-            <fieldset class="feedback-about">
-              <legend class="feedback-about__title">Опишите свои эмоции:</legend>
-              <textarea class="feedback-about__area" name="about" cols="30" rows="10"></textarea>
+            <fieldset class="feedback__block">
+              <legend class="feedback__title">Опишите свои эмоции:</legend>
+              <textarea class="feedback__area" name="about" cols="30" rows="10"></textarea>
             </fieldset>
 
 
