@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -20,22 +21,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="#">
+              <a class="site-list__link"  href="#">
                 Главная
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">
+              <a class="site-list__link"  href="#">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="form.html">
+              <a class="site-list__link"  href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">
+              <a class="site-list__link"  href="#">
                 Html Academy
               </a>
             </li>
@@ -45,8 +46,8 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <div class="page-main__background-photo">
-          <h1 class="visually-hidden">Добро пожаловать в ущелье Седона</h1>
+        <div class="page-main__background-photo page-main__background-photo--form">
+          <!-- <h1 class="visually-hidden">Добро пожаловать в ущелье Седона</h1> -->
         </div>
         <div class="promo__wrapper">
           <div class="promo__header">
@@ -56,80 +57,97 @@
         </div>
       </section>
       <section class="feedback">
-        <h2 class="visually-hidden">Cтраница с отзывом</h2>
+        <!-- <h2 class="visually-hidden">Cтраница с отзывом</h2> -->
           <form class="feedback__wrapper" action="https://echo.htmlacademy.ru" method="POST">
+
+<!--            Блок с ФИО клиента              -->
+
             <fieldset class="feedback__block">
               <legend class="feedback__title">Представьтесь</legend>
               <ul class="feedback__list">
                 <li class="feedback__item">
-                  <label class="feedback__label" for="name-field">Имя*:</label>
-                  <input class="feedback__input" id="name-field" type="text" name="first-name">
+                  <label class="feedback__label" for="name-field">Имя<sup>*</sup>:</label>
+                  <input class="feedback__input--name" id="name-field" type="text" name="first-name" value="Петр">
                 </li>
                 <li class="feedback__item">
-                  <label class="feedback__label" for="last-name-field">Фамилия*:</label>
-                  <input class="feedback__input" id="last-name-field" type="text" name="last-name">
+                  <label class="feedback__label" for="last-name-field">Фамилия<sup>*</sup>:</label>
+                  <input class="feedback__input" id="last-name-field" type="text" name="last-name" value="Иванов">
                 </li>
                 <li class="feedback__item">
                   <label class="feedback__label" for="patronymic">Отчество:</label>
-                  <input class="feedback__input" id="patronymic" type="text" name="patronymic">
+                  <input class="feedback__input" id="patronymic" type="text" name="patronymic" value="Александрович">
                 </li>
               </ul>
             </fieldset>
+
+<!--          Блок с контактной информацией           -->
+
             <fieldset class="feedback__block feedback__block--column">
               <legend class="feedback__title">Контактная информация:</legend>
-              <ul class="feedback__list">
-                <li class="feedback__item">
-                  <label class="feedback__label" for="phone-contact">Контактный телефон*:</label>
-                  <input class="feedback__input" id="phone-contact" type="tel">
+              <ul class="feedback__list--contacts">
+                <li class="feedback__item feedback__item--contacts">
+                  <label class="feedback__label feedback__label--contacts" for="phone-contact">Контактный телефон<sup>*</sup>:</label>
+                  <input class="feedback__input feedback__input--contacts" id="phone-contact" type="tel" value="Введите телефон">
                 </li>
-                <li class="feedback__item">
-                  <label class="feedback__label" for="email-contact">Электронная почта:*</label>
-                  <input class="feedback__input" id="email-contact" type="email" name="email">
+                <li class="feedback__item feedback__item--contacts">
+                  <label class="feedback__label feedback__label--contacts" for="email-contact">Электронная почта:<sup>*</sup></label>
+                  <input class="feedback__input feedback__input--contacts" id="email-contact" type="email" name="email" value="Введите e-mail">
                 </li>
               </ul>
             </fieldset>
+
+<!--            Блок с оценкой            -->
+
             <fieldset class="feedback__block feedback__block--column">
               <legend class="feedback__title">Ваше общее впечатление:</legend>
               <ul class="feedback__list">
-                <li class="feedback__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--radio" id="pos-feedback" type="radio" name="positive-feedback">
                   <label class="feedback__label" for="pos-feedback">Cкорее положительное</label>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--radio" id="neg-feedback" type="radio" name="negative-feedback">
                   <label class="feedback__label" for="neg-feedback">Скорее отрицательное</label>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--radio" id="neutral-feedback" type="radio" name="neutral-feedback">
                   <label class="feedback__label" for="neutral-feedback">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
+
+<!--          Блок с посещёнными достопримечательностями          -->
+
             <fieldset class="feedback__block">
               <legend class="feedback__title">Посещенные достопримечательности:</legend>
               <ul class="feedback__list">
-                <li class="feedback__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--checkbox" id="bridge" type="checkbox" name="bridge-place" checked>
                   <label class="feedback__label" for="bridge">Мост Дьявола</label>
                 </li>
-                <li class="visitors-places__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--checkbox" id="rock" type="checkbox" name="rock-place" checked>
                   <label class="feedback__label" for="rock">Гора-Колокол</label>
                 </li>
-                <li class="visitors-places__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--checkbox" id="park" type="checkbox" name="slide-park-place" checked>
                   <label class="feedback__label" for="park">Слайд-парк</label>
                 </li>
-                <li class="visitors-places__item">
+                <li class="feedback__item--rating">
                   <input class="feedback__input feedback__input--checkbox" id="red-rock" type="checkbox" name="red-rock-place">
                   <label class="feedback__label" for="red-rock">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="about-place">
+
+<!--         Поле с общим отзывом         -->
+
+            <fieldset class="feedback__block">
               <legend class="feedback__title">Опишите свои эмоции:</legend>
-              <textarea name="about" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="feedback__area" name="about" cols="30" rows="10"></textarea>
             </fieldset>
+
+
             <button class="button button--feedback" type="submit">
               Отправить отзыв
             </button>
