@@ -3,27 +3,34 @@
   margin-top: 32px;
   margin-right: 17px;
   margin-left: 17px;
-  outline: 5px solid palegreen;
 }
 
 .promo__slogan {
-  padding: 0 75px;
+  padding: 0 15px;
   font-family: "PT sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
 }
 
 .promo__intro {
-  padding: 5px 40px;
+  padding: 5px 10px;
   font-family: "PT sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__slogan {
+    padding: 0 65px;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

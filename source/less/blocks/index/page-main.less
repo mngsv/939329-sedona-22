@@ -1,9 +1,10 @@
 .page-main__background-photo {
   height: 389px;
-  width: 320px;
+  width: 100%;
   background:
+    url("../img/intro-triangle.svg") 50% 100% no-repeat,
     url("../img/welcome.svg") 50% 50% no-repeat,
-    url("../img/back-mobile.jpg") no-repeat;
+    url("../img/back-mobile.jpg") 50% 0 no-repeat;
 }
 
 .page-main__background-photo--form {
@@ -12,4 +13,31 @@
   background:
     url("../img/form-sedona.svg") 5% no-repeat,
     url("../img/form-back-image.jpg") no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__background-photo {
+    height: 518px;
+    width: 100%;
+    background:
+      url("../img/intro-triangle-tablet.svg") 50% 100% no-repeat,
+      url("../img/welcome-tablet.svg") 50% 50% no-repeat,
+      url("../img/back-tablet.jpg") 50% 0 no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__background-photo {
+    height: 518px;
+    width: 1200px;
+    background:
+      url("../img/intro-triangle-desk.svg") 50% 100% no-repeat,
+      url("../img/text-index-desktop.svg") 30% 100% no-repeat,
+      url("../img/back-desktop.jpg") 50% 100% no-repeat;
+    background-size: 1200px auto;
+  }
+
+  .page-main {
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  }
 }

@@ -1,5 +1,9 @@
+.features__wrapper--reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .features__content {
-  outline: 5px solid olivedrab;
   padding: 39px 16px 35px 16px;
   background-color: @blue;
   text-align: center;
@@ -10,8 +14,8 @@
   font-family: "PT sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 21px;
-  line-height: 15px;
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
   color: @white;
 }
@@ -20,8 +24,8 @@
   font-family: "PT sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: @white;
 }
@@ -30,8 +34,33 @@
   font-family: "PT sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: @white;
+}
+
+.features__img {
+  display: flex;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .features__wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+  }
+
+  .features__content {
+    padding: 0;
+  }
+
+  .features__title {
+    font-size: 21px;
+  }
+
+  .features__wrapper--reverse {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
 }
