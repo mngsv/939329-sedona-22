@@ -5,13 +5,19 @@
 
 .main-nav__list {
   position: relative;
-  top: -40px;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: @lightblue;
 }
 
+.main__toggle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: @white;
+  height: 56px;
+}
 
 .main-nav__toggle {
   position: absolute;
@@ -34,6 +40,10 @@
   }
 
   .main-nav__toggle {
+    display: none;
+  }
+
+  .main__toggle {
     display: none;
   }
 }

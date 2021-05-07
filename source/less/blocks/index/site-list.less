@@ -1,12 +1,9 @@
 .site-list__item .site-list__link {
   position: relative;
   display: block;
-  font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-  text-transform: uppercase;
   text-decoration: none;
   color: @white;
   text-align: center;
@@ -28,18 +25,26 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     padding-top: 10px;
   }
 
   .site-list__item .site-list__link {
-    font-family: "PT Sans", sans-serif;
     font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 26px;
     color: @black;
     border: none;
+
+    &:hover {
+      background-color: transparent;
+      color: @blue;
+    }
+
+    &:active {
+      color: @ultralightbeige;
+    }
   }
 
   .site-list__item {
@@ -47,7 +52,7 @@
   }
 
   .site-list__item:first-child {
-    padding-left: 15px;
+    padding-left: -10px;
   }
 
   .site-list__item:nth-child(2) {
