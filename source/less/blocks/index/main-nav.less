@@ -1,0 +1,49 @@
+.main-nav {
+  position: relative;
+  width: auto;
+}
+
+.main-nav__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: @lightblue;
+}
+
+.main__toggle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: @white;
+  height: 56px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 0;
+  display: block;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: none;
+  background: url("../img/icon-svg/icon-menu.svg.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    background-color: @white;
+    top: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main__toggle {
+    display: none;
+  }
+}

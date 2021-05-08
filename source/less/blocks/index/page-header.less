@@ -1,0 +1,28 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin-bottom: 40px;
+}
+
+.page-header__logo {
+  position: absolute;
+  order: 1;
+  left: 50%;
+  transform: translate(-50%);
+  top: 203px;
+  z-index: 9;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-bottom: 10px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 3;
+    top: -1px;
+  }
+}

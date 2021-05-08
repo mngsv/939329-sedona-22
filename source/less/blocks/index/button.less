@@ -11,6 +11,7 @@
   text-transform: uppercase;
   color: @white;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: @blue;
@@ -25,5 +26,19 @@
 
   &:disabled {
     background-color: @ultralightbeige;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 458px;
+    transform: translate(30%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    width: 458px;
+    transform: translate(75%);
   }
 }
