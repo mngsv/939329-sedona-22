@@ -21,7 +21,6 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  margin-left: -40px;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -288,13 +287,25 @@
 
 @media (min-width: @desktop-width) {
   .feedback__wrapper {
-    margin: 0 110px;
-    display: flex;
+    margin: 0 auto;
     width: 980px;
   }
 
+  .feedback__list {
+    padding-left: 0;
+  }
+
+  .feedback__block--person .feedback__item {
+    padding-left: 90px;
+  }
+
+  .feedback__block {
+    width: 100%;
+  }
+
+  .feedback__block--column,
   .feedback__block--person {
-    margin-left: 180px;
+    max-width: 475px;
   }
 
   .feedback__list--checkbox {
@@ -302,39 +313,62 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: -109px;
     padding-top: 10px;
+    padding-left: 0;
+  }
+
+  .feedback__block--column {
+    margin-right: 0;
+  }
+
+  .feedback__item--checkbox {
+    padding-left: 0;
+    padding-right: 70px;
+  }
+
+  .feedback__list--checkbox li:last-child {
+    padding-right: 0;
   }
 
   .feedback__input--name {
-    padding-right: 82px;
+    padding-right: 110px;
+    padding-left: 15px;
+    margin-right: 0;
   }
 
   .feedback__input {
     padding-right: 50px;
+    margin-right: 0;
   }
 
-  .feedback__title--places {
+  .feedback__block--places .feedback__title {
     transform: translate(5%);
   }
 
-  .feedback__title--column {
+  .feedback__block--column .feedback__title {
     margin-left: 30px;
+  }
+
+  .feedback__block--person .feedback__title {
+    padding-right: 110px;
+  }
+
+  .feedback__icon-block {
+    margin-left: 0;
+    margin-right: 10px;
   }
 
   .feedback__list--contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: -45px;
     width: 990px;
+    padding: 0;
+    margin: 0;
   }
 
   .feedback__list--contacts li:first-child {
-    margin-right: 95px;
-  }
-
-  .feedback__list--contacts li:last-child {
-    padding-left: 13px;
+    padding-right: 120px;
+    padding-left: 0;
   }
 
   .feedback__item--contacts {
@@ -344,21 +378,20 @@
   }
 
   .feedback__label--contacts {
+    padding-left: 0;
+    margin-left: 0;
     padding-top: 15px;
   }
 
   .feedback__input--contacts {
-    min-width: 160px;
-  }
-
-  .feedback__title--about {
-    transform: translate(80%);
+    min-width: 150px;
   }
 
   .feedback__area {
+    box-sizing: border-box;
+    resize: vertical;
     margin-left: 0;
     width: 100%;
-    margin-right: -50px;
   }
 
   .feedback__button--block {
