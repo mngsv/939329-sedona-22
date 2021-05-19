@@ -1,55 +1,187 @@
 .catalog__description {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
+  line-height: 20px;
 }
 
 .catalog__author {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
+  text-transform: none;
 }
 
 .catalog__count {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 .catalog__slogan {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  padding-left: 60px;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  text-transform: uppercase;
 }
 
 .catalog__intro {
+  text-align: center;
   padding: 15px 35px 5px 35px;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  text-transform: uppercase;
-}
-
-.catalog__content {
-  outline: 5px solid steelblue;
 }
 
 .catalog__video-block {
-  outline: 5px solid springgreen;
   margin-top: 32px;
   margin-left: 28px;
   margin-right: 26px;
   text-align: center;
+}
+
+.catalog__main-content {
+  margin: 0 20px;
+}
+
+.catalog__video .catalog__control {
+  position: relative;
+  bottom: 95px;
+  height: 93px;
+  background:
+    url("../img/volume-slider.svg") 25% 80% no-repeat,
+    url("../img/volume-scale.svg") 50% 78% no-repeat,
+    url("../img/bg-control-small.svg") 50% 99% no-repeat;
+}
+
+.catalog__control--small {
+  position: relative;
+  bottom: 115px;
+  right: 20px;
+  height: 86px;
+  background:
+    url("../img/replay.svg") 23% 66% no-repeat,
+    url("../img/subtitles.svg") 75% 66% no-repeat,
+    url("../img/fullscreen.svg") 93% 66% no-repeat,
+    url("../img/bglg-control-small.svg") 100% 100% no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px;
+  }
+
+  .catalog__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .catalog__content {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    align-items: center;
+    background-color: @darkwhite;
+  }
+
+  .catalog__description {
+    margin-bottom: -10px;
+  }
+
+  .catalog__author-block {
+    margin-left: 20px;
+  }
+
+  .promo__slogan {
+    font-size: 30px;
+  }
+
+  .catalog__slogan {
+    font-size: 30px;
+    padding-top: 30px;
+    margin-left: 175px;
+  }
+
+  .catalog__intro {
+    text-align: center;
+    transform: translate(23%);
+    width: 460px;
+  }
+
+  .catalog__video {
+    background-size: cover;
+    margin: 0 60px;
+  }
+
+  .catalog__video .catalog__control {
+    background:
+      url("../img/fullscreen-large.svg") 94% 50% no-repeat,
+      url("../img/volume-slider.svg") 32% 50% no-repeat,
+      url("../img/volume-scale-medium.svg") 36% 50% no-repeat,
+      url("../img/replay-large.svg") 6% 50% no-repeat,
+      url("../img/subtitles-large.svg") 85% 50% no-repeat,
+      url("../img/bg-contol-large.svg") 100% 100% no-repeat;
+  }
+
+  .catalog__control--small {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .catalog__video {
+    margin: 0 200px;
+  }
+
+  .promo__intro {
+    transform: translate(77%);
+    width: 440px;
+    padding-bottom: 70px;
+  }
+
+  .catalog__slogan {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .catalog__intro {
+    transform: translate(64%);
+    padding-bottom: 66px;
+  }
+
+  .catalog__block {
+    position: relative;
+  }
+
+  .catalog__content {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    background-color: rgba(000, 000, 000, 0.3);
+    color: @white;
+  }
+
+  .catalog__video .catalog__control {
+    background:
+      url("../img/fullscreen-large.svg") 95% 50% no-repeat,
+      url("../img/volume-slider.svg") 25% 50% no-repeat,
+      url("../img/volume-scale-large.svg") 36% 50% no-repeat,
+      url("../img/replay-large.svg") 5% 50% no-repeat,
+      url("../img/subtitles-large.svg") 88% 50% no-repeat,
+      url("../img/bg-contol-large.svg") 100% 100% no-repeat;
+  }
 }
