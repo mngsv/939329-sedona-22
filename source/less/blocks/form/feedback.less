@@ -85,8 +85,12 @@
   }
 }
 
-.feedback__label {
-  margin-left: 15px;
+.feedback__block--places li {
+  margin-left: 60px;
+}
+
+.feedback__block--places label {
+  padding-left: 15px;
 }
 
 .feedback__item--contacts {
@@ -120,35 +124,72 @@
 }
 
 .feedback__icon--phone {
-  background: url("../img/icon-svg/phone.svg") 50% 50% no-repeat @darkbeige;
+  background: url("../img/phone.svg") 50% 50% no-repeat @darkbeige;
 }
 
 .feedback__icon--mail {
-  background: url("../img/icon-svg/mail.svg") 50% 50% no-repeat @darkbeige;
+  background: url("../img/mail.svg") 50% 50% no-repeat @darkbeige;
 }
 
 
 /* Cтили для чекбоксов */
 
-
-.feedback__input--checkbox {
-  appearance: none;
+.feedback__list--checkbox label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
-.feedback__checkbox {
+.feedback__input--checkbox + label::before {
+  content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  left: -55px;
+  bottom: -10px;
+  width: 50px;
+  height: 50px;
   background-color: @darkwhite;
-  border-radius: 5px;
+  border-radius: 3px;
+}
 
-  &:hover {
-    background-color: @ultralightbeige;
-  }
+.feedback__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: -48px;
+  width: 32px;
+  height: 32px;
+  background: url("../img/tick-checked.svg") 100% 100% no-repeat;
+}
 
-  &:active {
-    background-color: @checkbox-active-color;
-  }
+/* Cтили для радиокнопок */
+.feedback__list--radio label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.feedback__input--radio + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 220px;
+  width: 52px;
+  height: 52px;
+  background-color: @darkwhite;
+  border-radius: 50%;
+}
+
+.feedback__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 235px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: @black;
 }
 
 .feedback__item--rating {
@@ -157,6 +198,9 @@
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
+  justify-content: flex-end;
+  padding-right: 25px;
+  padding-bottom: 20px;
 }
 
 .feedback__item--checkbox {
@@ -205,11 +249,11 @@
   .feedback__list--column {
     display: flex;
     flex-direction: column;
-    margin-left: -50px;
   }
 
   .feedback__item--rating {
     padding-top: 30px;
+    padding-left: 10px;
   }
 
   .feedback__block--column {
@@ -252,8 +296,12 @@
     font-size: 30px;
   }
 
-  .feedback__title--places {
-    transform: translate(20%);
+  .feedback__block--places li {
+    margin-left: 0;
+  }
+
+  .feedback__block--places .feedback__title {
+    transform: translate(19%);
   }
 
   .feedback__list--checkbox {
@@ -344,9 +392,15 @@
     margin-right: 0;
   }
 
+  .feedback__item--rating {
+    position: relative;
+    justify-content: flex-start;
+    margin-left: 40px;
+  }
+
   .feedback__item--checkbox {
     padding-left: 0;
-    padding-right: 70px;
+    padding-right: 56px;
   }
 
   .feedback__list--checkbox li:last-child {
@@ -369,7 +423,7 @@
   }
 
   .feedback__block--column .feedback__title {
-    margin-left: 30px;
+    transform: translate(-21%);
   }
 
   .feedback__block--person .feedback__title {
