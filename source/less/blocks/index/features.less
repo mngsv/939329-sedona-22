@@ -3,10 +3,25 @@
   flex-direction: column-reverse;
 }
 
+.features__wrapper--reverse .features__content {
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+
+.features__wrapper--reverse .features__count {
+  padding-top: 2px;
+}
+
 .features__content {
-  padding: 39px 16px 35px 16px;
-  background-color: @blue;
   text-align: center;
+  padding: 52px 15px 24px 14px;
+  background-color: @blue;
+}
+
+.features__wrapper .features__content:first-child {
+  max-width: 100%;
+  height: auto;
+  background: url("../img/features-triangle.svg") 100% -4px no-repeat @blue;
 }
 
 
@@ -16,6 +31,8 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @white;
+  padding-bottom: 9px;
+  margin-bottom: 0;
 }
 
 .features__description {
@@ -25,6 +42,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @white;
+  margin: 0;
+  padding: 17px 0;
 }
 
 .features__count {
@@ -34,6 +53,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @white;
+  margin: 0;
 }
 
 .features__img {
@@ -47,6 +67,11 @@
     grid-template-columns: 1fr max-content;
     padding-top: 30px;
   }
+
+  .features__wrapper .features__content:first-child {
+    background-image: none;
+  }
+
 
   .features__content {
     padding: 0;

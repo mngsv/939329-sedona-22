@@ -6,8 +6,7 @@
 
 
 .search__title {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 12px;
   font-style: normal;
   font-size: 21px;
   line-height: 26px;
@@ -22,6 +21,16 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @black;
+  padding-bottom: 14px;
+}
+
+.search iframe {
+  height: 350px;
+  width: 100%;
+}
+
+.search .map {
+  padding-top: 49px;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,11 +42,21 @@
   .search__title {
     font-size: 30px;
   }
+
+  .search iframe {
+    height: 350px;
+    width: 100%;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .search-wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .search iframe {
+    height: 350px;
+    width: 100%;
   }
 }

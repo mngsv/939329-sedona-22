@@ -93,7 +93,7 @@
   padding-left: 15px;
 }
 
-.feedback__item--contacts {
+.feedback__list--contacts .feedback__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -103,7 +103,7 @@
   padding-left: 0;
 }
 
-.feedback__label--contacts {
+.feedback__list--contacts label {
   margin-bottom: 10px;
   padding-left: 30px;
 }
@@ -141,7 +141,7 @@
   user-select: none;
 }
 
-.feedback__input--checkbox + label::before {
+.feedback__list--checkbox input + label::before {
   content: "";
   position: absolute;
   left: -55px;
@@ -152,7 +152,7 @@
   border-radius: 3px;
 }
 
-.feedback__input--checkbox:checked + label::after {
+.feedback__list--checkbox input:checked + label::after {
   content: "";
   position: absolute;
   bottom: 7px;
@@ -160,6 +160,14 @@
   width: 32px;
   height: 32px;
   background: url("../img/tick-checked.svg") 100% 100% no-repeat;
+}
+
+.feedback__list--checkbox input:hover + label::before {
+  background-color: @ultralightbeige;
+}
+
+.feedback__list--checkbox input:active + label::before {
+  background-color: @checkbox-active-color;
 }
 
 /* Cтили для радиокнопок */
@@ -170,7 +178,7 @@
   user-select: none;
 }
 
-.feedback__input--radio + label::before {
+.feedback__list--radio input + label::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -181,7 +189,7 @@
   border-radius: 50%;
 }
 
-.feedback__input--radio:checked + label::after {
+.feedback__list--radio input:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -192,7 +200,7 @@
   background-color: @black;
 }
 
-.feedback__item--rating {
+.feedback__list--radio .feedback__item {
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
@@ -203,7 +211,7 @@
   padding-bottom: 20px;
 }
 
-.feedback__item--checkbox {
+.feedback__list--checkbox .feedback__item {
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
@@ -251,7 +259,7 @@
     flex-direction: column;
   }
 
-  .feedback__item--rating {
+  .feedback__list--radio .feedback__item {
     padding-top: 30px;
     padding-left: 10px;
   }
@@ -291,11 +299,6 @@
     min-width: 560px;
   }
 
-  .promo__slogan--form {
-    padding-top: 30px;
-    font-size: 30px;
-  }
-
   .feedback__block--places li {
     margin-left: 0;
   }
@@ -310,12 +313,12 @@
     grid-template-rows: 1fr 1fr;
   }
 
-  .feedback__item--checkbox {
+  .feedback__list--checkbox .feedback__item {
     padding-top: 20px;
     padding-left: 70px;
   }
 
-  .feedback__label--checkbox {
+  .feedback__list--checkbox label {
     margin-left: 80px;
   }
 
@@ -392,13 +395,13 @@
     margin-right: 0;
   }
 
-  .feedback__item--rating {
+  .feedback__list--radio .feedback__item {
     position: relative;
     justify-content: flex-start;
     margin-left: 40px;
   }
 
-  .feedback__item--checkbox {
+  .feedback__list--checkbox .feedback__item {
     padding-left: 0;
     padding-right: 56px;
   }
@@ -450,13 +453,13 @@
     padding-left: 0;
   }
 
-  .feedback__item--contacts {
+  .feedback__list--contacts .feedback__item {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
 
-  .feedback__label--contacts {
+  .feedback__list--contacts label {
     padding-left: 0;
     margin-left: 0;
     padding-top: 15px;
