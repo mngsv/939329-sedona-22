@@ -1,10 +1,15 @@
 .page-main__background-photo {
-  height: 389px;
+  height: 423px;
   max-width: 100%;
   background:
-    url("../img/intro-triangle.svg") 50% 100% no-repeat,
+    url("../img/intro-triangle.svg") 50% 347px no-repeat,
     url("../img/welcome.svg") 50% 50% no-repeat,
-    url("../img/back-mobile.jpg") 50% 0 no-repeat;
+    url("../img/back-desktop.jpg") 50% 15px no-repeat;
+  background-size: auto auto, auto auto, 900px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg") 50% 44% no-repeat;
+  }
 }
 
 .page-main__background-photo--form {
@@ -13,8 +18,14 @@
   background:
     url("../img/intro-triangle.svg") 50% 100% no-repeat,
     url("../img/form-sedona.svg") 50% 50% no-repeat,
-    url("../img/form-back-image.jpg") 50% 80% no-repeat;
+    url("../img/form-back-desktop.jpg") 50% 100% no-repeat;
+  background-size: auto auto, auto auto, 902px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop-form@2x.jpg") 50% 0 no-repeat;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .page-main__background-photo--form {
@@ -23,7 +34,12 @@
     background:
       url("../img/intro-triangle-tablet.svg") 50% 100% no-repeat,
       url("../img/SEDONA-tablet-form.svg") 50% 50% no-repeat,
-      url("../img/back-desktop-form.jpg") 50% 80% no-repeat;
+      url("../img/form-back-desktop.jpg") 50% 80% no-repeat;
+    background-size: auto auto, auto auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop-form@2x.jpg") 50% 80% no-repeat;
   }
 }
 
@@ -35,6 +51,11 @@
       url("../img/intro-triangle-desk.svg") 50% 100% no-repeat,
       url("../img/SEDONA-tablet-form.svg") 50% 50% no-repeat,
       url("../img/form-back-desktop.jpg") 50% 100% no-repeat;
+    background-size: auto auto, auto auto, cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-back-desktop@2x.jpg") 50% 100% no-repeat;
   }
 }
 
@@ -45,7 +66,13 @@
     background:
       url("../img/intro-triangle-tablet.svg") 50% 100% no-repeat,
       url("../img/welcome-tablet.svg") 50% 50% no-repeat,
-      url("../img/back-tablet.jpg") 50% 0 no-repeat;
+      url("../img/back-desktop.jpg") 50% 100% no-repeat;
+    background-size: auto auto, auto auto, cover;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet@2x.jpg") 50% 0 no-repeat;
+    background-size: auto auto;
   }
 }
 
@@ -58,5 +85,10 @@
       url("../img/text-index-desktop.svg") 50% 50% no-repeat,
       url("../img/back-desktop.jpg") 50% 100% no-repeat;
     background-size: 1200px auto, auto auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg") 50% 100% no-repeat;
+    background-size: 1200px auto;
   }
 }

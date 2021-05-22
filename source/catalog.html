@@ -23,7 +23,7 @@
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-large.svg" width="187" height="96">
+            <source media="(min-width: 1200px)" srcset="img/logo-large.svg">
             <img class="logo" src="img/logo-small.svg" alt="Город Седона" width="102" height="85">
           </picture>
         </a>
@@ -67,7 +67,7 @@
             <h1 class="visually-hidden">Добро пожаловать в ущелье Седона</h1>
           </div>
           <div class="promo__wrapper">
-            <div class="promo__header">
+            <div class="promo__header promo__header--form">
               <h2 class="promo__slogan">Фото и видео</h2>
               <p class="promo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
             </div>
@@ -79,9 +79,9 @@
               <section class="catalog__block">
                 <div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/sunny-road-large.jpg">
-                    <source media="(min-width: 768px)" srcset="img/sunny-road-medium.jpg">
-                    <img class="catalog__img" src="img/sunny-road.jpg" width="280" height="280" alt="Солнечная дорога">
+                    <source media="(min-width: 1200px)" srcset="img/sunny-road-large.jpg 1x, img/sunny-road-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/sunny-road-medium.jpg 1x, img/sunny-road-medium@2x.jpg 2x">
+                    <img class="catalog__img" src="img/sunny-road.jpg" srcset="img/sunny-road@2x.jpg 2x" width="280" height="280" alt="Солнечная дорога">
                   </picture>
                 </div>
                 <div class="catalog__content">
@@ -101,9 +101,9 @@
               <section class="catalog__block">
                 <div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/plants-large.jpg">
-                    <source media="(min-width: 768px)" srcset="img/plants-medium.jpg">
-                    <img class="catalog__img" src="img/plants.jpg" width="280" height="280" alt="Местная растительность">
+                    <source media="(min-width: 1200px)" srcset="img/plants-large.jpg 1x, img/plants-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/plants-medium.jpg 1x, img/plants-medium@2x.jpg 2x">
+                    <img class="catalog__img" src="img/plants.jpg" srcset="img/plants@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
                   </picture>
                 </div>
                 <div class="catalog__content">
@@ -123,9 +123,9 @@
               <section class="catalog__block">
                 <div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/road-north-large.jpg">
-                    <source media="(min-width: 768px)" srcset="img/road-north-medium.jpg">
-                    <img class="catalog__img" src="img/road-north.jpg" width="280" height="280" alt="Дорога на север">
+                    <source media="(min-width: 1200px)" srcset="img/road-north-large.jpg 1x, img/road-north-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/road-north-medium.jpg 1x, img/road-north-medium@2x.jpg 2x">
+                    <img class="catalog__img" src="img/road-north.jpg" srcset="img/road-north@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
                   </picture>
                 </div>
                 <div class="catalog__content">
@@ -145,9 +145,9 @@
               <section class="catalog__block">
                 <div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/devils-bridge-large.jpg">
-                    <source media="(min-width: 768px)" srcset="img/devils-bridge-medium.jpg">
-                    <img  class="catalog__img" src="img/devils-bridge.jpg" width="280" height="280" alt="Мост дьявола">
+                    <source media="(min-width: 1200px)" srcset="img/devils-bridge-large.jpg 1x, img/devils-bridge-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/devils-bridge-medium.jpg 1x, img/devils-bridge-medium@2x.jpg 2x">
+                    <img  class="catalog__img" src="img/devils-bridge.jpg" srcset="img/devils-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
                   </picture>
                 </div>
                 <div class="catalog__content">
@@ -172,13 +172,13 @@
               </div>
               <div class="catalog__video">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/video-large.jpg">
-                  <source media="(min-width 768px)" srcset="img/video-medium.jpg">
-                  <img class="catalog__img" src="img/video.jpg" width="320" height="201" alt="видеопрезентация">
+                  <source media="(min-width: 1200px)" srcset="img/video-large.jpg 1x, img/video-large@2x.jpg 2x">
+                  <source media="(min-width 768px)" srcset="img/video-medium.jpg 1x, img/video-medium@2x.jpg 2x">
+                  <img class="catalog__img" src="img/video.jpg" srcset="img/video@2x.jpg 2x" width="320" height="201" alt="видеопрезентация">
                 </picture>
                 <div class="catalog__control">
+                  <div class="catalog__control catalog__control--small"></div>
                 </div>
-                <div class="catalog__ control catalog__control--small"></div>
               </div>
             </section>
           </div>
