@@ -23,7 +23,7 @@
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-large.svg" width="187" height="96">
+            <source media="(min-width: 1200px)" srcset="img/logo-large.svg">
             <img class="logo" src="img/logo-small.svg" alt="Город Седона" width="102" height="85">
           </picture>
         </a>
@@ -67,9 +67,9 @@
             <h1 class="visually-hidden">Добро пожаловать в ущелье Седона</h1>
           </div>
           <div class="promo__wrapper">
-            <div class="promo__header promo-header--form">
-              <h2 class="promo__slogan promo__slogan--form">Оставьте свой отзыв</h2>
-              <p class="promo__intro promo__intro--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <div class="promo__header promo__header--form">
+              <h2 class="promo__slogan">Оставьте свой отзыв</h2>
+              <p class="promo__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </div>
           </div>
         </section>
@@ -102,15 +102,15 @@
               <fieldset class="feedback__block feedback__block--contacts">
                 <legend class="feedback__title">Контактная информация:</legend>
                 <ul class="feedback__item feedback__list--contacts">
-                  <li class="feedback__item feedback__item--contacts">
-                    <label class="feedback__label feedback__label--contacts" for="phone-contact"><span class="visually-hidden">Контактный</span>телефон<sup>*</sup>:</label>
+                  <li class="feedback__item">
+                    <label class="feedback__label" for="phone-contact"><span class="visually-hidden">Контактный</span>телефон<sup>*</sup>:</label>
                       <div class="feedback__icon-block">
                         <input class="feedback__input feedback__input--contacts" id="phone-contact" type="tel" value="Введите телефон">
                         <div class="feedback__icon feedback__icon--phone"></div>
                       </div>
                   </li>
-                  <li class="feedback__item feedback__item--contacts">
-                    <label class="feedback__label feedback__label--contacts" for="email-contact">Электронная почта:<sup>*</sup></label>
+                  <li class="feedback__item">
+                    <label class="feedback__label" for="email-contact">Электронная почта:<sup>*</sup></label>
                     <div class="feedback__icon-block">
                       <input class="feedback__input feedback__input--contacts" id="email-contact" type="email" name="email" value="Введите e-mail">
                       <div class="feedback__icon feedback__icon--mail"></div>
@@ -124,16 +124,16 @@
               <fieldset class="feedback__block feedback__block--column">
                 <legend class="feedback__title">Ваше общее впечатление:</legend>
                 <ul class="feedback__list feedback__list--radio">
-                  <li class="feedback__item feedback__item--rating">
-                    <input class="visually-hidden feedback__input feedback__input--radio" id="pos-feedback" type="radio" name="positive-feedback">
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="pos-feedback" type="radio" name="positive-feedback">
                     <label class="feedback__label" for="pos-feedback">Cкорее положительное</label>
                   </li>
-                  <li class="feedback__item feedback__item--rating">
-                    <input class="visually-hidden feedback__input feedback__input--radio" id="neg-feedback" type="radio" name="negative-feedback">
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="neg-feedback" type="radio" name="negative-feedback">
                     <label class="feedback__label" for="neg-feedback">Скорее отрицательное</label>
                   </li>
-                  <li class="feedback__item feedback__item--rating">
-                    <input class="visually-hidden feedback__input feedback__input--radio" id="neutral-feedback" type="radio" name="neutral-feedback">
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="neutral-feedback" type="radio" name="neutral-feedback">
                     <label class="feedback__label" for="neutral-feedback">Затрудняюсь ответить</label>
                   </li>
                 </ul>
@@ -144,21 +144,21 @@
               <fieldset class="feedback__block feedback__block--places">
                 <legend class="feedback__title">Посещенные<br> достопримечательности:</legend>
                 <ul class="feedback__list feedback__list--checkbox">
-                  <li class="feedback__item feedback__item--checkbox">
-                    <input class="visually-hidden feedback__input--checkbox" id="bridge" type="checkbox" name="bridge-place" checked>
-                    <label class="feedback__label feedback__label--checkbox" for="bridge">Мост Дьявола</label>
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="bridge" type="checkbox" name="bridge-place" checked>
+                    <label class="feedback__label" for="bridge">Мост Дьявола</label>
                   </li>
-                  <li class="feedback__item feedback__item--checkbox">
-                    <input class="visually-hidden feedback__input--checkbox" id="rock" type="checkbox" name="rock-place" checked>
-                    <label class="feedback__label feedback__label--checkbox" for="rock">Гора-Колокол</label>
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="rock" type="checkbox" name="rock-place" checked>
+                    <label class="feedback__label" for="rock">Гора-Колокол</label>
                   </li>
-                  <li class="feedback__item feedback__item--checkbox">
-                    <input class="visually-hidden feedback__input--checkbox" id="park" type="checkbox" name="slide-park-place" checked>
-                    <label class="feedback__label feedback__label--checkbox" for="park">Слайд-парк</label>
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="park" type="checkbox" name="slide-park-place" checked>
+                    <label class="feedback__label" for="park">Слайд-парк</label>
                   </li>
-                  <li class="feedback__item feedback__item--checkbox">
-                    <input class="visually-hidden feedback__input--checkbox" id="red-rock" type="checkbox" name="red-rock-place">
-                    <label class="feedback__label feedback__label--checkbox" for="red-rock">Красные скалы</label>
+                  <li class="feedback__item">
+                    <input class="visually-hidden feedback__input" id="red-rock" type="checkbox" name="red-rock-place">
+                    <label class="feedback__label" for="red-rock">Красные скалы</label>
                   </li>
                 </ul>
               </fieldset>
