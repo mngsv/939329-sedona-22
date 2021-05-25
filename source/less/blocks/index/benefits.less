@@ -95,10 +95,107 @@
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    align-items: baseline;
+    padding-bottom: 15px;
   }
 
   .benefits__item:nth-child(2) {
     border-bottom: none;
     border-top: none;
+  }
+
+  .benefits__item {
+    padding-top: 18px;
+  }
+
+  .benefits__title {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0 30px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__title {
+    padding-left: 32px;
+  }
+
+  .benefits__item:last-child .benefits__title {
+    padding-left: 29px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__count {
+    padding-left: 3px;
+  }
+
+  .benefits__item:last-child .benefits__count {
+    padding-top: 2px;
+  }
+
+  .benefits__item:first-child .benefits__description {
+    padding-top: 8px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__description {
+    padding: 4px 20px;
+  }
+
+  .benefits__item:last-child .benefits__description {
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefits__item:nth-child(2) {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .benefits__item {
+    padding-top: 18px;
+    padding-bottom: 21px;
+  }
+
+  .benefits__title {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0 30px;
+  }
+
+  .benefits__item:first-child .benefits__title {
+    padding: 17px 60px 13px 70px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__title {
+    padding: 0 86px 13px 90px;
+  }
+
+  .benefits__item:last-child .benefits__title {
+    padding: 0 92px 11px 89px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__count {
+    padding-left: 5px;
+  }
+
+  .benefits__item:last-child .benefits__count {
+    padding-top: 2px;
+    padding-right: 5px;
+  }
+
+  .benefits__item:first-child .benefits__count {
+    padding-left: 8px;
+  }
+
+  .benefits__item:first-child .benefits__description {
+    padding-top: 6px;
+    padding-left: 10px;
+  }
+
+  .benefits__item:nth-child(2) .benefits__description {
+    padding: 4px 23px 0 40px;
+  }
+
+  .benefits__item:last-child .benefits__description {
+    padding-top: 7px;
+    padding-left: 4px;
   }
 }

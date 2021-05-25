@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.search__content br {
+  display: none;
+}
+
 
 .search__title {
   padding-top: 12px;
@@ -29,7 +33,7 @@
   width: 100%;
 }
 
-.search .map {
+.search .search__map {
   padding-top: 49px;
 }
 
@@ -39,13 +43,28 @@
     flex-direction: row;
   }
 
+  .search__content br {
+    display: inline;
+  }
+
   .search__title {
+    padding-top: 25px;
     font-size: 30px;
+    line-height: 26px;
   }
 
   .search iframe {
     height: 350px;
     width: 100%;
+  }
+
+  .search__description {
+    padding: 4px 70px;
+    padding-bottom: 25px;
+  }
+
+  .search .search__map {
+    padding-top: 58px;
   }
 }
 
@@ -53,10 +72,19 @@
   .search-wrapper {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+  }
+
+  .search__description {
+    padding-bottom: 30px;
   }
 
   .search iframe {
     height: 350px;
     width: 100%;
+  }
+
+  .search .search__map {
+    padding-top: 66px;
   }
 }
