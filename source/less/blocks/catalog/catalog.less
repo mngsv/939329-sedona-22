@@ -1,4 +1,5 @@
 .catalog__description {
+  margin: 0;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
@@ -6,6 +7,7 @@
 }
 
 .catalog__author {
+  margin: 0;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -14,15 +16,22 @@
 }
 
 .catalog__count {
+  padding-left: 15px;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
 }
 
+.catalog__count-block {
+  margin: 0;
+  padding-top: 10px;
+}
+
 .catalog__slogan {
+  padding-top: 33px;
   font-weight: 700;
-  padding-left: 60px;
+  padding-left: 57px;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -30,7 +39,7 @@
 
 .catalog__intro {
   text-align: center;
-  padding: 15px 35px 5px 35px;
+  padding: 9px 35px 0 35px;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -44,36 +53,58 @@
   text-align: center;
 }
 
-.catalog__main-content {
+.catalog__block:nth-child(2) .catalog__img {
+  padding-top: 40px;
+}
+
+.catalog__block:nth-child(3) .catalog__img {
+  padding-top: 41px;
+}
+
+.catalog__block:nth-child(4) .catalog__img {
+  padding-top: 40px;
+}
+
+.catalog__block {
   margin: 0 20px;
 }
+
+.catalog__img {
+  padding-top: 22px;
+  padding-bottom: 15px;
+}
+
 
 .catalog__video .catalog__control {
   position: relative;
   margin: 0 20px;
-  bottom: 53px;
-  height: 50px;
+  bottom: 65px;
+  height: 45px;
   background:
-    url("../img/volume-slider.svg") 25% 54% no-repeat,
+    url("../img/volume-slider.svg") 21% 54% no-repeat,
     url("../img/volume-scale.svg") 50% 54% no-repeat,
     rgba(0, 0, 0, 0.6);
 }
 
 .catalog__control .catalog__control--small {
   position: relative;
-  top: 50px;
+  top: 46px;
   right: 20px;
   width: 100%;
-  height: 56px;
+  height: 65px;
   background:
     url("../img/replay.svg") 10% 50% no-repeat,
-    url("../img/subtitles.svg") 72% 50% no-repeat,
-    url("../img/fullscreen.svg") 93% 50% no-repeat,
+    url("../img/subtitles.svg") 70% 50% no-repeat,
+    url("../img/fullscreen.svg") 91% 50% no-repeat,
     @darkwhite;
 }
 
 
 @media (min-width: @tablet-width) {
+  .catalog__block {
+    margin: 0;
+  }
+
   .catalog__main-content {
     display: flex;
     flex-wrap: wrap;
@@ -81,42 +112,73 @@
   }
 
   .catalog__img {
+    padding: 0;
+    display: block;
     width: 100%;
     height: auto;
+  }
+
+  .catalog__block:nth-child(2) .catalog__img {
+    padding-top: 0;
+  }
+
+  .catalog__block:nth-child(3) .catalog__img {
+    padding-top: 0;
+  }
+
+  .catalog__block:nth-child(4) .catalog__img {
+    padding-top: 0;
   }
 
   .catalog__content {
     height: 80px;
     display: grid;
-    grid-template-columns: 1fr 70px;
+    grid-template-columns: 1fr 87px;
     align-items: center;
     background-color: @darkwhite;
-  }
-
-  .catalog__description {
-    margin-bottom: -10px;
   }
 
   .catalog__author-block {
     margin-left: 20px;
   }
 
+  .catalog__author {
+    padding-top: 4px;
+  }
+
+  .catalog__count-block {
+    padding-bottom: 11px;
+    padding-right: 16px;
+  }
+
+  .catalog__count {
+    padding-left: 14px;
+  }
+
   .catalog__slogan {
     font-size: 30px;
-    padding-top: 60px;
+    padding-top: 29px;
+    padding-left: 0;
     text-align: center;
   }
 
   .catalog__intro {
+    padding-top: 4px;
     text-align: center;
     width: 445px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 79px;
   }
 
   .catalog__video {
+    height: 500px;
     background-size: cover;
     margin: 0 60px;
+  }
+
+  .catalog__video .catalog__img {
+    height: 500px;
+    padding-bottom: 0;
   }
 
   .catalog__video .catalog__control {
@@ -146,18 +208,20 @@
   }
 
   .catalog__video {
-    margin: 0 200px;
+    padding: 0 141px;
+    height: 500px;
   }
 
   .catalog__slogan {
     text-align: center;
     padding-left: 0;
     margin-left: 0;
+    padding-top: 32px;
   }
 
   .catalog__intro {
     text-align: center;
-    padding-bottom: 66px;
+    padding-bottom: 78px;
   }
 
   .catalog__block {
@@ -175,11 +239,11 @@
 
   .catalog__video .catalog__control {
     background:
-      url("../img/fullscreen-large.svg") 95% 50% no-repeat,
-      url("../img/volume-slider.svg") 25% 50% no-repeat,
+      url("../img/fullscreen-large.svg") 738px 51% no-repeat,
+      url("../img/volume-slider.svg") 26% 50% no-repeat,
       url("../img/volume-scale-large.svg") 36% 50% no-repeat,
-      url("../img/replay-large.svg") 5% 50% no-repeat,
-      url("../img/subtitles-large.svg") 88% 50% no-repeat,
+      url("../img/replay-large.svg") 34px 50% no-repeat,
+      url("../img/subtitles-large.svg") 674px 52% no-repeat,
       url("../img/bg-contol-large.svg") 100% 100% no-repeat;
   }
 }
