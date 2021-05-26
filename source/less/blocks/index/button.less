@@ -1,5 +1,9 @@
 .button {
-  transform: translate(9px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
   width: 280px;
   height: 58px;
   background-color: @lightblue;
@@ -12,6 +16,7 @@
   color: @white;
   border: none;
   cursor: pointer;
+  transform: translate(20px);
 
   &:hover {
     background-color: @blue;
@@ -32,13 +37,15 @@
 @media (min-width: @tablet-width) {
   .button {
     width: 458px;
-    transform: translate(95px);
+    transform: translate(90%);
+    margin-top: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .button {
     width: 458px;
-    transform: translate(81%);
+    transform: translate(75%);
+    margin-top: 40px;
   }
 }

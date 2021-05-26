@@ -52,7 +52,7 @@
                 </a>
               </li>
             </ul>
-            <div class="main__toggle">
+            <div class="main-toggle">
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">
                   Открыть меню
@@ -64,7 +64,7 @@
       </header>
       <main class="page-main">
         <section class="promo">
-          <div class="page-main__background-photo--form">
+          <div class="page-main__background-photo-form">
             <h1 class="visually-hidden">Добро пожаловать в ущелье Седона</h1>
           </div>
           <div class="promo__wrapper">
@@ -85,7 +85,7 @@
                 <ul class="feedback__list">
                   <li class="feedback__item">
                     <label class="feedback__label" for="name-field">Имя<sup>*</sup>:</label>
-                    <input class="feedback__input--name" id="name-field" type="text" name="first-name" value="Петр">
+                    <input class="feedback__input-name" id="name-field" type="text" name="first-name" value="Петр">
                   </li>
                   <li class="feedback__item">
                     <label class="feedback__label" for="last-name-field">Фамилия<sup>*</sup>:</label>
@@ -102,18 +102,18 @@
 
               <fieldset class="feedback__block feedback__block--contacts">
                 <legend class="feedback__title">Контактная информация:</legend>
-                <ul class="feedback__item feedback__list--contacts">
+                <ul class="feedback__item feedback__list-contacts">
                   <li class="feedback__item">
                     <label class="feedback__label" for="phone-contact"><span>Контактный </span>телефон<sup>*</sup>:</label>
                       <div class="feedback__icon-block">
-                        <input class="feedback__input feedback__input--contacts" id="phone-contact" type="tel" value="Введите телефон">
+                        <input class="feedback__input feedback__input-contacts" id="phone-contact" type="tel" value="Введите телефон">
                         <div class="feedback__icon feedback__icon--phone"></div>
                       </div>
                   </li>
                   <li class="feedback__item">
                     <label class="feedback__label" for="email-contact">Электронная почта:<sup>*</sup></label>
                     <div class="feedback__icon-block">
-                      <input class="feedback__input feedback__input--contacts" id="email-contact" type="email" name="email" value="Введите e-mail">
+                      <input class="feedback__input feedback__input-contacts" id="email-contact" type="email" name="email" value="Введите e-mail">
                       <div class="feedback__icon feedback__icon--mail"></div>
                     </div>
                   </li>
@@ -126,15 +126,15 @@
                 <legend class="feedback__title">Ваше общее впечатление:</legend>
                 <ul class="feedback__list feedback__list--radio">
                   <li class="feedback__item">
-                    <input class="visually-hidden feedback__input" id="pos-feedback" type="radio" name="positive-feedback">
+                    <input class="visually-hidden feedback__input" id="pos-feedback" type="radio" name="radio-feedback">
                     <label class="feedback__label" for="pos-feedback">Cкорее положительное</label>
                   </li>
                   <li class="feedback__item">
-                    <input class="visually-hidden feedback__input" id="neg-feedback" type="radio" name="negative-feedback">
+                    <input class="visually-hidden feedback__input" id="neg-feedback" type="radio" name="radio-feedback">
                     <label class="feedback__label" for="neg-feedback">Скорее отрицательное</label>
                   </li>
                   <li class="feedback__item">
-                    <input class="visually-hidden feedback__input" id="neutral-feedback" type="radio" name="neutral-feedback">
+                    <input class="visually-hidden feedback__input" id="neutral-feedback" type="radio" name="radio-feedback">
                     <label class="feedback__label" for="neutral-feedback">Затрудняюсь ответить</label>
                   </li>
                 </ul>
@@ -171,9 +171,23 @@
                 <textarea class="feedback__area" name="about" cols="20" rows="5"></textarea>
               </fieldset>
               <div class="feedback__button-block">
-                <button class="button button--feedback" type="submit">
+                <a class="button button--feedback" href="#" type="submit">
                   Отправить отзыв
-                </button>
+                </a>
+                <div class="feedback-popup-alarm">
+                  <p class="feedback__title">Что-то пошло не так!</p>
+                  <p class="feedback__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                  <div>
+                    <button class="button button--feedback">ОК</button>
+                  </div>
+                </div>
+                <div class="feedback-popup">
+                  <p class="feedback__title">Ваш отзыв отправлен!</p>
+                  <p class="feedback__description">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+                  <div>
+                    <button class="button button--feedback">Закрыть окно</button>
+                  </div>
+                </div>
                 <p class="feedback__required"><sup>*</sup>—обязательные поля</p>
               </div>
           </form>
